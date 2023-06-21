@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">other</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            
+        </nav>
+        <div class="header-text">
+            <h1>AMBICA </h1>
+            <h1>RAMCHANDRA</h1>
+            <p> writing • photography • books i've read • music i've been listening to </p>
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../pp/images/pfp.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1> hi, i'm ambica. </h1>
+                <h4>data scientist + product designer</h4>
+                <p>--------------------------------------------------------------------------------------------------------</p><br>
+                <p> hey there! i'm a data scientist + designer currently based in nyc.</p><br>
+                <p> i graduated from the university of north carolina at chapel hill in may of 2023 where i studied a blend of economics and statistics and minored in philosophy, politics, and economics.</p><br>
+                <p>interests: machine learning, aerospace, DAOs, femtech, deeptech</p><br>
+                <p>i'm always looking to join exciting new ventures and projects! reach out if you think this could be a good fit :)</p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                    <p class="tab-links" onclick="opentab('what keeps me up at night')">what keeps me up at night</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>june 2023 - present</span><br>product management intern, turmerik.</li>
+                        <li><span>june 2023 - present</span><br>researcher, stanford university's hoover institution.</li>
+                        <li><span>june 2022 - august 2022</span><br>equity research intern, neuberger berman.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - 2023</span><br>university of north carolina at chapel hill.</li>
+                        <li><span>2016 - 2019</span><br>stem early college at nc a&t university.</li>
+                    </ul>
+                </div>      
+                <div class="tab-contents" id="what keeps me up at night">
+                    <ul>
+                        <li><span>x</span><br>university of north carolina at chapel hill.</li>
+                        <li><span>x</span><br>stem early college at nc a&t university.</li>
+                    </ul>
+                </div>     
+                <h5>made with ♡ in nyc by ambica</h5>
+            </div>
+             
+        </div>
+    </div>
+    
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="title">notable work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="title">let's chat</h1>
+        <div class="services-list">
+            <div>
+                <h2>the corporate stuff</h2>
+                <p><a href="https://www.linkedin.com/in/ambica-ramchandra/">cv</a> • <a href = "mailto: ambica.ramchandra@tamidgroup.org">email</a> • <a href="https://www.linkedin.com/in/ambica-ramchandra/">linkedin</a></p>
+                 
+            </div>
+            <div>
+                <h2>the fun stuff</h2>
+                <p><a href="https://github.com/ambiirnyc">github</a> • <a href="https://twitter.com/Ambica2023">twitter</a></p>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
